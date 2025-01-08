@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>A Portfolio Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/new_logo_babu.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Development</p>
+          <h1>Hi, I'm <span>Babu</span><br />Vagh from India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------about------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/my_image123.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm Babu Vagh, a web developer from Ahmedabad, India. I have a
+              background in frontend development and I'm currently focused on
+              mastering technologies like JavaScript and React.js. I'm
+              passionate about building responsive and dynamic websites.In my
+              free time, I love learning new technologies.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />JavaScript / java /
+                  HTML / CSS
+                </li>
+                <li>
+                  <span>Frameworks & Libraries</span><br />React.js / Bootstrap
+                </li>
+                <li>
+                  <span>Other Skills</span><br />Responsive Web Design /
+                  Problem-solving / Version Control
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>Freelance Web Developer (2024)</span><br /></li>
+                
+                  Developed responsive portfolio websites using HTML,CSS, and
+                  JavScript.<br/>
+                  Built interactive web apolications using React.js.<br/>
+                  Worked on optimizing website performance and improving user experience.
+                </li>
+                <li><span>Personal Projects : UGVCL CONSUMER PORTAL (2023)</span><br />Ugvcl Consumer Portal help for 
+                    latest bill view, bill payment, payment receipt ,unit 
+                    conjunction detail and many more specify for light on-off alerts and complain regularly 
+                    electricity issues and consumer can track  complain status. alerts consumer can be feedback </li>
+                
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>Bachlor of Computer Application</span><br />Navgujrat collage - Gandhingar (2024)<br/> Focused on core computer science concepts and programming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------services---------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Designing user-friendly and engaging intrafaces to enhance user experience
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+             Designing intuitive and attractive user interfaces with a focus on user experience and usability.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-react"></i></fa-brands>
+            <h2>Frontend Development</h2>
+            <p>
+              Building responsive and synamic websites using React.js and javascript.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------portfolio---------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>COFFEESHOP UI WEB</h3>
+              <p>
+                coffee web is a modern coffee shop website built using React.js, Tailwind CSS, and Framer Motion. It features a captivating hero section, an intuitive navbar, a detailed where to buy section, and an engaging services page. The website is fully responsive, with smooth animations and a clean, professional design. It showcases how modern tools can create an immersive and user-friendly web experience.
+              </p>
+              <a href="https://bvagh10.github.io/coffee-web/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Portfolio UI web</h3>
+              <p>
+                Your portfolio UI features a clean, responsive design with four main sections: Home, Skills, Education, and Contact. Built using React.js for dynamic functionality and styled with Tailwind CSS for fast, flexible, and modern design. It provides a user-friendly interface with smooth navigation between sections.
+              </p>
+              <a href="https://bvagh10.github.io/Portfolio-web/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>FOOD UI WEB</h3>
+              <p>
+                The food UI web, built with React.js and styled using Tailwind CSS, includes dynamic animations to enhance user interaction. It features sections for Home, Menu, About, and Services, with smooth transitions and engaging animations to make browsing enjoyable. The layout is responsive, ensuring a seamless experience on all devices while showcasing the content beautifully.
+              </p>
+              <a href="https://github.com/Bvagh10/food.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ------------------contact-------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>bvagh011@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9327912641</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/babu-vagh-231119282"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ BabuVagh.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz0qulh85EmXjGd2NF2z98kT819wWN5zBhulwNnO617pVUzDq6nbT0nfHjDmJhhex_L/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfuly";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
